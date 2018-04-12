@@ -96,16 +96,23 @@ h4{
 	font-size: 12px;
 }
 
-.Box1{
-	column-count: 2;
-	height: 300px;
-	column-width: 100px;
+.Box1,
+.Box2,
+.Box3{
+	display: grid;
+	grid-template-columns:400px 400px;
+	justify-content: center;
+	grid-gap:100px;
+}
+.Box3{
+	grid-template-columns:1fr 1fr 1fr;
+	padding:0 100px;
 
 }
 
-
 .Member1{
 	text-align: center;
+	border: 2px solid;
 	
 }
 
@@ -114,10 +121,6 @@ h4{
 }
 
 
-.Box2{
-	column-count: 2;
-
-}
 
 .Member3{
 	text-align:center;
@@ -127,10 +130,6 @@ h4{
 	text-align:center;
 }
 
-.Box3{
-	
-	column-count: 3;
-}
 
 .Member5{
 	text-align:center;
